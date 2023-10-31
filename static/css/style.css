@@ -81,7 +81,7 @@ footer {
 }
 .wrapper__inner:before {
     z-index: 100;
-    content: '';
+    /* content: ''; */
     display: inline-block;
     height: 200px;
     width: 30px;
