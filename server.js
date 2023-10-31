@@ -2,9 +2,9 @@ const express = require('express');
 const app = express();
 const ejs = require('ejs');
 const path = require('path');
-const PORT = 9906
+const PORT = 8000
 const cors = require('cors')
-const book = require('./book')
+// const book = require('./book')
 
 
 app.use(express.urlencoded());
@@ -18,8 +18,8 @@ app.use(express.static(path.join(__dirname, 'static')));
 app.get('/', (req, res) => {
   res.render('index');
 });
-
-app.use('/api/book', book);
+/* 
+app.use('/api/book', book); */
 
 // Start the server
 app.listen(PORT, () => {

@@ -65,9 +65,9 @@ footer {
     height: 100vh;
     /* border:30px solid #333; */
     overflow: hidden;
-    border: 5px solid transparent;
-    border-radius: 20px;
-    background: #fff;
+    /* border: 5px solid transparent; */
+    /* border-radius: 20px; */
+    /* background: #fff; */
     /* background: #000; */
     /* background-image: linear-gradient(#fff, #fff),
     linear-gradient(to right, #fff 0%,  rgb(255, 248, 248) 100%);
