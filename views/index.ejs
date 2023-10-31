@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>사전예약</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta name="title" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="subject" content="">
+    <meta name="Description" content="">
+    <meta name="classification" content="">
+
+    <!-- 카카오톡 링크 보낼 때 뜨는 이미지와 텍스트 설정 -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <!-- 제목에 뜰 내용(굵은글씨) -->
+    <meta property="og:url" content="">
+    <!-- 링크걸릴주소 -->
+    <meta property="og:description" content="">
+    <!-- 제목아래쪽에 한줄 나오는 짧은 소개글 -->
+    <meta property="og:image" content="">
+    <!-- 썸네일이미지 경로 -->
+
+    <link type="text/css" href="/css/default.css" rel="stylesheet">
+    <link type="text/css" href="/css/style.css" rel="stylesheet">
+    <link type="text/css" href="/css/response.css" rel="stylesheet">
+    <script src="/js/jquery-3.6.4.min.js"></script>
+    <!-- <script src="/js/vanilla-tilt.min.js"></script> -->
+    <script src="/js/script.js"></script>
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LDG1RDY0R8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LDG1RDY0R8');
+
+        // Event tracking
+        function trackButtonClick() {
+            gtag('event', 'click', {
+                'event_category': 'CTA',
+                'event_label': 'Pre-register Button'
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <!-- <header>
+        For users who like mobile games and Tales Runner fans
+    </header> -->
+    <div class="progressbar js_prgressbar">
+        <div class="progressbar__inner">
+            <span class="progress js_progress"></span>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="wrapper__inner">
+            <div class="controller js_controller">
+                <div class="controller__joystick">
+                    <div class="controller__joystick__inner">
+                        <span class="joystick__lever">
+                            <div class="joystick__lever__inner">
+                                <span></span>
+                                <span class="lever__up"></span>
+                                <span class="lever__left"></span>
+                                <span class="lever__down"></span>
+                                <span class="lever__right"></span>
+                            </div>
+                        </span>
+                        <span class="joystick__key-w" data-position="top-10">W</span>
+                        <span class="joystick__key-a" data-position="left-10">A</span>
+                        <span class="joystick__key-s" data-position="top-90">S</span>
+                        <span class="joystick__key-d" data-position="left-90">D</span>
+                    </div>
+                </div>
+                <div class="controller__button">
+                    <div class="controller__button__inner">
+                        <button class="button__key-z"><span>Z</span></button>
+                        <button class="button__key-x"><span>X</span></button>
+                        <button class="button__key-c"><span>C</span></button>
+                        <button class="button__key-v"><span>V</span></button>
+                        <button class="button__key-f"><span>F</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <main class="main__section js_main_section">
+                <section class="section__visual" id="visual">
+                    <div class="visual__content">
+                        <h1 class="visual__title">메르헨스타즈</h1>
+                        <h2 class="visual__title-sub">당신의 손으로 다시 쓰는 동화</h2>
+                        <a href="#book" class="visual__button"><span>지금 사전예약 진행중
+                                !</span></a>
+                        <a href="#book" class="visual_down">
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                    <div class="video-cover"></div>
+                    <video poster="https://sgimage.netmarble.com/images/netmarble/skrv/20230315/mlaj1678873915225.jpg "
+                        loop="loop" muted="muted" playsinline="" autoplay="autoplay" class="visual__video">
+                        <source src="/video/visual.mp4" type="video/mp4">
+                    </video>
+                </section>
+                <section class="section__book" id="book">
+                    <div class="section__book__content">
+                        <canvas id="particles"></canvas>
+                        <div class="book__model">
+                            <div class="model__message">
+                                <p data-typing="작가님을 위해 준비했어요!" class="message_typing js_message_typing">작가님을 위해 준비했어요!
+                                </p>
+                                <span class="message__cursor"></span>
+                            </div>
+                            <img src="/img/model_1.png" alt="" class="model__img">
+                        </div>
+                        <div class="form__book">
+                            <div class="form__book__inner">
+                                <h2 class="book__title">메르헨스타즈 사전예약</h2>
+
+                                <div class="book__os">
+                                    <label class="os__label js_os_label">
+                                        <input type="radio" name="os" class="os__input" id="aos" value="aos">
+                                        <img src="/img/ico_aos.png" alt="acndroid" class="os__img">
+                                        <span class="os__tit">Android</span>
+                                    </label>
+                                    <label class="os__label js_os_label">
+                                        <input type="radio" name="os" class="os__input" id="ios" value="ios">
+                                        <img src="/img/ico_ios.png" alt="iOS" class="os__img ios">
+                                        <span class="os__tit">IOS</span>
+                                    </label>
+                                </div>
+                                <div class="book__phone">
+                                    <label class="phone__label">
+                                        <input type="number" placeholder="- 를 제외한 숫자만 입력해주세요" class="phone__input"
+                                            id="phone" maxlength="12" oninput="maxLengthCheck(this)">
+                                    </label>
+                                </div>
+                                <div class="book__agree">
+                                    <label class="agree__label">
+                                        <input type="checkbox" name="agree" class="agree__input" id="confirm1">
+                                        <span class="fake-checkbox"></span>
+                                        <span>이벤트알림 수신동의</span>
+                                    </label>
+                                    <a href="javascript:;" class="agree__link js_button_popup" data-name="event">보기</a>
+                                </div>
+                                <div class="book__agree">
+                                    <label class="agree__label">
+                                        <input type="checkbox" name="agree" class="agree__input" id="confirm2">
+                                        <span class="fake-checkbox"></span>
+                                        <span>개인정보 수집 및 이용동의</span>
+                                    </label>
+                                    <a href="javascript:;" class="agree__link js_button_popup"
+                                        data-name="privacy">보기</a>
+                                </div>
+
+                                <div class="book__submit">
+                                    <button class="submit__button"
+                                        onclick="bookFromUser(), trackButtonClick()"><span>사전예약하기</span></button>
+                                </div>
+                                <div class="book__store">
+                                    <a href="javascript:;" class="store__link">
+                                        <img src="/img/google_store.png" alt="google store" class="store__img">
+                                    </a>
+                                    <a href="javascript:;" class="store__link">
+                                        <img src="/img/apple_store.png" alt="apple store" class="store__img">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section__event" id="event">
+                    <div class="section__event__inner">
+                        <h2 class="event__title">목표 달성 이벤트</h2>
+                        <div class="event__counting">
+                            <img src="/img/doll.png" alt="" class="counting_img">
+                            <div class="counting__info">
+                                <p class="info__title">사전 예약 수</p>
+                                <strong class="info__result">416,000명</strong>
+                            </div>
+                        </div>
+                        <div class="event__model">
+                            <img src="/img/model_2.png" alt="" class="model__img">
+                        </div>
+                        <div class="event__process">
+                            <div class="process__item red process__item--success">
+                                <div class="item__card dia">
+                                    <p class="card__success">
+                                        success!
+                                    </p>
+                                    <div class="card__diagonal top">
+                                        <span>10만</span>
+                                        <img src="/img/mark_dia.png" alt="diamond">
+                                    </div>
+                                    <div class="card__diagonal btm">
+                                        <span>10만</span>
+                                        <img src="/img/mark_dia.png" alt="diamond">
+                                    </div>
+                                    <div class="card__benefit">
+                                        <img src="/img/item.png" alt="benefit">
+                                    </div>
+                                </div>
+                                <img src="/img/soldier_dia.png" alt="soldier" class="soldier__img">
+                            </div>
+                            <div class="process__item black process__item--success">
+                                <div class="item__card spade">
+                                    <p class="card__success">
+                                        success!
+                                    </p>
+                                    <div class="card__diagonal top">
+                                        <span>20만</span>
+                                        <img src="/img/mark_spade.png" alt="spade">
+                                    </div>
+                                    <div class="card__diagonal btm">
+                                        <span>20만</span>
+                                        <img src="/img/mark_spade.png" alt="spade">
+                                    </div>
+                                    <div class="card__benefit">
+                                        <img src="/img/item.png" alt="benefit">
+                                    </div>
+                                </div>
+                                <img src="/img/soldier_spade.png" alt="soldier" class="soldier__img">
+                            </div>
+                            <div class="process__item red process__item--success">
+                                <div class="item__card heart">
+                                    <p class="card__success">
+                                        success!
+                                    </p>
+                                    <div class="card__diagonal top">
+                                        <span>30만</span>
+                                        <img src="/img/mark_heart.png" alt="heart">
+                                    </div>
+                                    <div class="card__diagonal btm">
+                                        <span>30만</span>
+                                        <img src="/img/mark_heart.png" alt="heart">
+                                    </div>
+                                    <div class="card__benefit">
+                                        <img src="/img/item.png" alt="benefit">
+                                    </div>
+                                </div>
+                                <img src="/img/soldier_heart.png" alt="soldier" class="soldier__img">
+                            </div>
+                            <div class="process__item black">
+                                <div class="item__card clover">
+                                    <!-- <p class="card__success">
+                                        success!
+                                    </p> -->
+                                    <div class="card__diagonal top">
+                                        <span>50만</span>
+                                        <img src="/img/mark_clover.png" alt="clover">
+                                    </div>
+                                    <div class="card__diagonal btm">
+                                        <span>50만</span>
+                                        <img src="/img/mark_clover.png" alt="clover">
+                                    </div>
+                                    <div class="card__benefit">
+                                        <img src="/img/item.png" alt="benefit">
+                                    </div>
+                                </div>
+                                <!-- <img src="/img/soldier_spade.png" alt="soldier" class="soldier__img"> -->
+                            </div>
+                            <div class="process__item red">
+                                <div class="item__card jocker">
+                                    <!-- <p class="card__success">
+                                        success!
+                                    </p> -->
+                                    <div class="card__diagonal top">
+                                        <span>100만</span>
+                                        <img src="/img/mark_jocker.png" alt="jocker">
+                                    </div>
+                                    <div class="card__diagonal btm">
+                                        <span>100만</span>
+                                        <img src="/img/mark_jocker.png" alt="jocker">
+                                    </div>
+                                    <div class="card__benefit">
+                                        <img src="/img/item.png" alt="benefit">
+                                    </div>
+                                </div>
+                                <img src="/img/rabbit.png" alt="soldier" class="rabbit__img">
+                            </div>
+                        </div>
+                        <div class="event__progressbar">
+                            <span style="width:60%">
+                                <img src="/img/progress_jocker.png" alt="jocker">
+                            </span>
+                        </div>
+                    </div>
+
+                </section>
+                <section class="section__character js_character" id="character">
+                    <div class="character__bg">
+                        <img class="bg__stars" src="/img/bg_character_stars.jpg" alt="stars">
+                        <img class="bg__marchen" src="/img/bg_character_marchen.jpg" alt="marchen">
+                        <img class="bg__tales" src="/img/bg_character_tales.jpg" alt="tales">
+                    </div>
+                    <div class="character__content">
+                        <h2 class="character__title">캐릭터소개</h2>
+                        <div class="content__box__warpper">
+                            <a href="javascript:;" class="content__box js_cont_box" data-type="stars">
+                                <div class="box__img">
+                                    <img src="/img/character_type1.png" alt="marchen stars">
+                                </div>
+                                <div class="box__jewel">
+                                    <span></span>
+                                </div>
+                                <div class="box__text">
+                                    <h3>메르헨스타즈</h3>
+                                    <span>Marchen Stars</span>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="content__box js_cont_box" data-type="marchen">
+                                <div class="box__img">
+                                    <img src="/img/character_type2.png" alt="marchen">
+                                </div>
+                                <div class="box__jewel">
+                                    <span></span>
+                                </div>
+                                <div class="box__text">
+                                    <h3>고전동화</h3>
+                                    <span>Marchen</span>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="content__box js_cont_box" data-type="tales">
+                                <div class="box__img">
+                                    <img src="/img/character_type3.png" alt="tales runner">
+                                </div>
+                                <div class="box__jewel">
+                                    <span></span>
+                                </div>
+                                <div class="box__text">
+                                    <h3>테일즈런너</h3>
+                                    <span>Tales Runner</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="character__popup">
+                        <div class="popup__top js_char_detail">
+                            <div class="popup__model">
+                                <img src="/img/character/char_stars_author.png" alt="" class="js_char_img">
+                            </div>
+                            <div class="popup__detail">
+                                <h4 class="detail__title js_name">라라</h4>
+                                <ul class="detail__list">
+                                    <li>
+                                        <span>출신</span>
+                                        <span class="js_native">동화나라의 여왕</span>
+                                    </li>
+                                    <li>
+                                        <span>직업</span>
+                                        <span class="js_job">힐러 / 원거리딜러</span>
+                                    </li>
+                                    <li>
+                                        <span>성격</span>
+                                        <span class="js_personal">#진중한 #차분한 #슬픔이있는 #상냥한</span>
+                                    </li>
+                                    <li>
+                                        <p class="list__storytelling js_story">앙리 3세와 사브리나의 딸이자 동화나라의 공주. 기쁨의 나라 출신
+                                            사브리나에게 이어받은
+                                            잠재된
+                                            기쁨의 힘을 지녔다.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="char__popup__btm">
+                        <div class="btm__button">
+                            <div class="button__wrapper__stars" data-type="stars">
+                                <button class="button__character js_btn_char active">
+                                    <div class="img__outer">
+                                        <img src="/img/character/char_stars_author_thumb.png" alt="author">
+                                    </div>
+                                    <p>작가</p>
+                                </button>
+                                <button class="button__character js_btn_char">
+                                    <div class="img__outer">
+                                        <img src="/img/character/char_stars_anastasha_thumb.png" alt="anastasha">
+                                    </div>
+                                    <p>아나스타샤</p>
+                                </button>
+                                <button class="button__character js_btn_char">
+                                    <div class="img__outer">
+                                        <img src="/img/character/char_stars_violet_thumb.png" alt="violet">
+                                    </div>
+                                    <p>바이올렛</p>
+                                </button>
+                                <button class="button__character js_btn_char">
+                                    <div class="img__outer">
+                                        <img src="/img/character/char_stars_edward_thumb.png" alt="edward">
+                                    </div>
+                                    <p>에드워드</p>
+                                </button>
+                                <button class="button__character js_btn_char">
+                                    <div class="img__outer">
+                                        <img src="/img/character/char_stars_scarlet_thumb.png" alt="scarlet">
+                                    </div>
+                                    <p>스칼렛</p>
+                                </button>
+                            </div>
+                            <div class="button__wrapper__marchen" data-type="marchen">
+                                <button class="button__character js_btn_char active">
+                                    <div class="img__outer">
+                                        <img src="/img/character/char_marchen_hensel_thumb.png" alt="hensel">
+                                    </div>
+                                    <p>헨젤</p>
+                                </button>
+                                <button class="button__character js_btn_char">
+                                    <div class="img__outer">
+                                        <img src="/img/character/char_marchen_gretel_thumb.png" alt="gretel">
+                                    </div>
+                                    <p>그레텔</p>
+                                </button>
+                                <button class="button__character js_btn_char">
+                                    <div class="img__outer">
+                                        <img src="/img/character/char_marchen_pinocchio_thumb.png" alt="pinocchio">
+                                    </div>
+                                    <p>피노키오</p>
+                                </button>
+                                <button class="button__character js_btn_char">
+                                    <div class="img__outer">
+                                        <img src="/img/character/char_marchen_alice_thumb.png" alt="alice">
+                                    </div>
+                                    <p>앨리스</p>
+                                </button>
+                                <button class="button__character js_btn_char">
+                                    <div class="img__outer">
+                                        <img src="/img/character/char_marchen_rose_thumb.png" alt="rose">
+                                    </div>
+                                    <p>브라이어로즈</p>
+                                </button>
+                            </div>
+                            <div class="button__wrapper__tales" data-type="tales">
+                                <button class="button__character js_btn_char active">
+                                    <div class="img__outer">
+                                        <img src="/img/character/char_tales_chowon_thumb.png" alt="chowon">
+                                    </div>
+                                    <p>초원</p>
+                                </button>
+                                <button class="button__character js_btn_char">
+                                    <div class="img__outer">
+                                        <img src="/img/character/char_tales_mingming_thumb.png" alt="mingming">
+                                    </div>
+                                    <p>밍밍</p>
+                                </button>
+                                <button class="button__character js_btn_char">
+                                    <div class="img__outer">
+                                        <img src="/img/character/char_tales_lala_thumb.png" alt="lala">
+                                    </div>
+                                    <p>라라</p>
+                                </button>
+                                <button class="button__character js_btn_char">
+                                    <div class="img__outer">
+                                        <img src="/img/character/char_tales_alims_thumb.png" alt="alims">
+                                    </div>
+                                    <p>엘림스</p>
+                                </button>
+                                <button class="button__character js_btn_char">
+                                    <div class="img__outer">
+                                        <img src="/img/character/char_tales_bigbo_thumb.png" alt="bigbo">
+                                    </div>
+                                    <p>빅보</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="char__popup__bg js_char_bg"></div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <footer>
+        Copyright (C) 2023.Rhaon All rights reserved.
+    </footer>
+
+    <div class="popup js_popup event">
+        <div class="popup__cont">
+            <h3 class="popup__title">이벤트 알림 수신 동의</h3>
+            <div class="popup__prebox">
+                <pre>
+이벤트 진행 일정 및 이벤트 선물은 내부 사정에 따라 변경 될 수 있습니다.
+
+사전 예약 선물 당첨 및 지급에 대한 안내는 신청하신 휴대전화 번호로 발송 됩니다.
+
+지급되는 이벤트 선물은 계정당 1회 사용이 가능합니다.
+
+휴대전화 문자 스팸 기능, 통신사 스팸 문자 차단이 설정 되어 있을 경우 문자를 받지 못할 수 있으니 꼭 스팸 차단 기능 설정을 해제하여 주시기 바랍니다.
+
+잘못된 휴대전화번호를 입력하여 불이익이 발생한 경우 별도의 도움을 드릴 수 없으니 정확한 휴대전화 번호를 입력해주시기 바랍니다.
+
+타인의 휴대전화번호를 사용하셨을경우 이벤트 참여에서 제외될 수 있습니다.
+                </pre>
+            </div>
+        </div>
+        <div class="popup__bg js_bg"></div>
+        <span class="cursor__close js_cursor"><span class="shape"></span></span>
+    </div>
+
+
+    <div class="popup js_popup privacy">
+        <div class="popup__cont">
+            <h3 class="popup__title">개인정보 이용동의</h3>
+            <div class="popup__prebox">
+                <pre>
+- ‘라온’은 게임 및 이벤트 정보 안내를 위한 다음과 같은 개인정보를 수집하고 있습니다.
+1. 개인정보의 수집 및 이용목적 : 게임 출시 및 이벤트 정보 안내
+2. 수집하고자 하는 개인 정보 항목 : 휴대폰 번호
+3. 개인정보의 보유 및 이용기간 : 수집일로부터 <b>6개월동안</b> 정보 사용에 대한 거부할 권리가 있습니다. 단, 동의를 거부하는 경우 게임 정보 및 이벤트 정보 안내 문자를 받을 수 없습니다.
+
+<b>개인정보 취급방침</b>
+
+‘라온’은 회원님의 개인정보를 중요시하며, ‘개인정보 보호법’, ‘정보통신망 이용촉진 및 정보보호에 관한 법률’ 등 관련법규를 준수하고 있습니다.
+
+<b>개인정보 수집 및 이용</b>
+
+‘개인정보 보호법’과 ‘정보통신망 이용촉진 및 정보보호에 관한 법률’에 따라 본 게임 서비스는 이용자의 개인정보 수집과 이용을 위해서 이용자의 동의가 필요합니다.
+
+가. 개인정보 수집 및 이용 목적
+
+- 회사는 원활한 고객상담, 각종 서비스 제공, 데이터 통계 등을 목적으로 이용자의 개인 정보를 수집하고 있습니다.
+
+나. 수집하려는 개인정보의 항목
+
+- 이용자의 휴대폰 전화번호, 모바일 기기 식별코드
+
+다. 개인정보의 보유 및 이용 기간
+
+- 원칙적으로 개인정보 수집 및 이용 목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다. 단, 관계법령의 규정에 의하여 보존할 필요가 있는 경우 회사는 일정한 기간 동안 개인정보를 보관합니다.
+
+라. 동의 거부 시 불이익 내용
+
+- 이용자는 본 게임 서비스의 게임정보 수집을 거부할 권리가 있으며, 이용자가 본 게임 서비스의 게임정보 수집을 거부하는 경우 회사에서 제공하는 게임 서비스의 전부 또는 일부의 이용에 제한이 있을 수 있습니다.
+                </pre>
+            </div>
+        </div>
+        <div class="popup__bg js_bg"></div>
+        <span class="cursor__close js_cursor"><span class="shape"></span></span>
+    </div>
+
+
+</body>
+
+</html>

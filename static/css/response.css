@@ -1,0 +1,335 @@
+@media screen and (max-width:1200px){
+    .wrapper__inner:before {
+        content:none;
+    }
+    .form__book {
+        width:400px;
+    }
+    .model__message {
+        display: none;
+    }
+    .detail__title,
+    .character__title,
+    .event__title,
+    .book__title {
+        font-size:45px;
+    }
+    .book__title {
+        word-break: keep-all;
+    }
+    
+    .info__result,
+    .info__title {
+        font-size: 30px;
+    }
+    .counting_img {
+        height: 120px;
+    }
+    .counting__info{
+        width: 500px;
+        height: 60px;
+    }
+    .card__diagonal span {
+        font-size: 14px;
+    }
+    .card__diagonal.top {
+        top: 10px;
+    }
+    .content__box__warpper.active .content__box {
+        width: 110px;
+        height: 110px;
+    }
+    .content__box__warpper.active .box__text h3 {
+        font-size:15px;
+        padding-top: 34px;
+    }
+    .box__text h3 {
+        font-size: 34px;
+        height: 90px;
+        padding-top: 0;
+    }
+    .detail__list li {
+        margin-bottom: 10px;
+    }
+    .detail__list li span {
+        font-size: 17px;
+    }
+    .list__storytelling {
+        margin-top: 0;
+        font-size: 14px;
+    }
+    .button__character {
+        max-width:100px;
+    }
+    .button__character p {
+        font-size: 14px;
+    }
+    .content__box {
+        width:250px;
+        height: 370px;
+    }
+    .box__img {
+        height: 143px;
+    }
+    .box__text span {
+        bottom:50px;
+    }
+}
+@media screen and (max-width:768px){
+    section { 
+        height:auto;
+        min-height: 100vh;
+    }
+    .wrapper__inner:before {
+        content:none;
+    }
+    .visual__title{
+        font-size: 50px;
+    }
+    .visual__title-sub {
+        font-size: 17px;
+    }
+    .visual__button {
+        width:300px;
+        height: 70px;
+    }
+    .visual__button span {
+        font-size: 24px;
+    }
+    .controller {
+        display: none;
+    }
+    .controller__joystick {
+        display: none;
+    }
+    .wrapper{
+        border: 0;
+        border-radius: 0;
+    }
+    .progressbar {
+        width: 100%;
+        left: 0;
+    }
+    .book__model {
+        display: none;
+    }
+    .form__book {
+        width: 100%;
+        height: 100vh;
+        padding: 50px 20px;
+        border-radius: 0;
+    }
+    .detail__title, .character__title, .event__title, .book__title{
+        font-size: 34px;
+        word-break: keep-all;
+    }
+    .agree__link,
+    .book__agree span {
+        font-size: 14px;
+    }
+    .popup {
+        padding: 0 15px;
+    }
+    .popup__cont {
+        height: 300px;
+    }
+    .popup__prebox pre {
+        font-size: 12px;
+    }
+    .popup__title {
+        font-size: 17px;
+    }
+    .cursor__close {
+        top: 20px !important;
+        left: calc(50% - 35px) !important;
+    }
+    .phone__input {
+        font-size: 17px;
+    }
+    .section__event__inner {
+        height: 100%;
+        padding: 50px 10px;
+    }
+    .counting_img {
+        display: none;
+    }
+    .counting__info {
+        left: 0;
+        padding: 0;
+        gap:20px;
+        margin-bottom:20px;
+        width: 100%;
+    }
+    .info__result, .info__title {
+        font-size: 27px;
+    }
+    .event__title {
+        margin-bottom: 10px;
+    }
+    .event__process {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .process__item {
+        max-width:48%;
+        height: 150px;
+        margin: 0 auto;
+    }
+    .card__diagonal.btm {
+        display:none
+    }
+    .soldier__img {
+        display: none;
+    }
+    .card__diagonal.top {
+        top: 11px;
+        left:5px;
+    }
+    .card__diagonal span {
+        font-size: 17px;
+    }
+    .card__success {
+        font-size: 17px;
+        top: 8px;
+    }
+    .rabbit__img {
+        bottom:-30px;
+        right:-30px;
+        width:60px;
+    }
+    .model__img {
+        display:none;
+    }
+    .card__benefit img {
+        width: 80px;
+    }
+    .event__progressbar {
+        display: none;
+    }
+    .content__box__warpper {
+        padding: 10px;
+        gap: 5px;
+    }
+    .box__text {
+        height: auto;
+    }
+    .box__text h3 {
+        font-size: 24px;
+        height: 60px;
+    }
+    .box__text span {
+        font-size: 10px;
+        bottom: 0;
+    }
+    .box__img {
+        height: 90px;
+    }
+    .box__jewel span {
+        width: 14px;
+        height: 14px;
+        border-width:1px;
+        top: -7px;
+    }
+    .content__box {
+        background: rgba(0,0,0,0.5);
+        width:153px;
+        height: 210px;
+        border-width: 2px;
+        margin:0;
+    }
+    .section__character {
+        align-items: flex-start;
+        padding: 50px 0;
+        height: auto;
+    }
+    .content__box__warpper {
+        flex-wrap:wrap;
+    }
+    .event__title,
+    .character__title {
+        margin-bottom: 30px;
+    }
+    .content__box__warpper.active{
+        flex-wrap:nowrap;
+        zoom:1;
+    }
+    .content__box__warpper.active .content__box {
+        width: 100%;
+    }
+    .content__box__warpper.active .box__text h3 {
+        font-size: 14px;
+        height: 180px;
+    }
+    .content__box__warpper.active .box__jewel span {
+        top: -15px;
+    }
+    .popup__model {
+        width:40%;
+    }
+    .popup__detail {
+        width:60%;
+        padding-top: 0;
+        padding-right: 10px;
+    }
+    .character__popup {
+        margin-top: 0;
+    }
+    .char__popup__btm {
+        position: relative;
+        bottom: 0;
+        margin:0 0 40px;
+        padding: 10px;
+    }
+    .img__outer {
+        height: auto;
+    }
+    .button__wrapper__stars, .button__wrapper__marchen, .button__wrapper__tales {
+        gap: 5px;
+    }
+    .button__character {
+        height: auto;
+        border-radius: 0;
+    }
+    .button__character p {
+        border-radius: 0;
+    }
+    .popup__top {
+        height: 360px;
+    }
+    .popup__model img {
+        height: auto;
+    }
+    .char__popup__btm {
+        height: auto;
+        position: absolute;
+    }
+    .content__box__warpper.active .content__box{
+        height: 45px;
+    }
+    .content__box.active, .content__box:hover {
+        border:2px solid var(--light-color3);
+    }
+    .content__box__warpper.active .box__jewel span {
+        top:-10px;
+    }
+    .content__box__warpper.active .box__text h3{
+        height: auto;
+        position: relative;
+        top: 0;
+    }
+    .detail__list li span:nth-child(1) {
+        width: 40px;
+    }
+    .detail__list li span {
+        font-size: 15px;
+    }
+    .popup__model img {
+        position: relative;
+        width:200%;
+        left:-50%;
+    }
+    .content__box__warpper.active .box__text h3 {
+        padding-top: 0;
+        top: -12px;
+    }
+}

@@ -1,0 +1,9 @@
+CREATE TABLE
+    `Books` (
+        `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+        `os` VARCHAR(10) NOT NULL,
+        `phone_number` VARCHAR(20) UNIQUE NOT NULL,
+        `registration_date` DATE NOT NULL DEFAULT CURRENT_DATE,
+        `createdAt` DATETIME NOT NULL,
+        `updatedAt` DATETIME NOT NULL
+    );
